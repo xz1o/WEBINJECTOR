@@ -11,15 +11,21 @@ Welcome to **WebInject 2.0**, the first **web-based injector** built to empower 
 
 - 🌐 **Web-Based Injector**  
   Inject mods into HTML5 and web-embedded games directly from your browser.
+  
+![Screenshot 2025-05-14 10 40 03 AM](https://github.com/user-attachments/assets/07c6c240-d9ad-444e-9bca-d06b1c1cd6bb)
 
 - 🎮 **Powerful Game Modding**  
   Compatible with a growing list of popular games – customize gameplay like never before.
+  
+![Screenshot 2025-05-14 10 40 23 AM](https://github.com/user-attachments/assets/2ed0ea30-c7f7-47a0-9126-c15690d3d78e)
 
 - 🧩 **Mod Loader & Manager**  
   Easily enable, disable, and configure mods through an intuitive interface.
 
 - 💡 **Live Mod Explorer**  
   Browse and preview community-created mods instantly.
+
+  ![Screenshot 2025-05-14 10 40 17 AM](https://github.com/user-attachments/assets/a22b30dd-28d3-4604-a64d-ff2a0fdb1641)
 
 - ⚙️ **Advanced Controls**  
   Toggle overlays, resize the UI, use keyboard shortcuts, and apply themes – all customizable.
@@ -49,6 +55,8 @@ WebInject 2.0 is intended for educational and non-commercial purposes. Use respo
 ## 🛠️ Developers
 
 Want to contribute? Fork the repo and submit a pull request. Contributions, issues, and suggestions are always welcome!
+
+![Screenshot 2025-05-14 10 40 13 AM](https://github.com/user-attachments/assets/cebeef80-d4cb-477c-b8ae-2ef409f714c7)
 
 ---
 
