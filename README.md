@@ -60,7 +60,7 @@ MIT License. See `LICENSE` for details.
 
 ## 🌐 Visit the Live Site
 
-👉 [Launch WebInject 2.0](https://webinjector.vercel.app/))  
+👉 ([Launch WebInject 2.0](https://webinjector.vercel.app/)
 Experience game modding directly in your browser.
 
 ---
