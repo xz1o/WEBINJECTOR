@@ -1,14 +1,19 @@
 "use client"
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { SearchBar } from "@/components/ui/search-bar"
 import { useRouter } from "next/navigation"
 import { useSearch } from "@/components/search/search-provider"
-import { Logo } from "@/components/ui/logo"
+import { CountdownTimer } from "@/components/ui/countdown-timer"
 
 export function HeroSection() {
   const router = useRouter()
   const { query } = useSearch()
+
+  // Calculate target date (3 days from now)
+  const targetDate = new Date()
+  targetDate.setDate(targetDate.getDate() + 4)
 
   const handleSearch = (searchQuery: string) => {
     if (searchQuery.trim()) {
@@ -30,9 +35,25 @@ export function HeroSection() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center mb-12">
-          <div className="flex flex-col items-center mb-6">
-            <Logo size="lg" showText={false} linkToHome={false} />
+          {/* Countdown Timer */}
+          <div className="mb-8">
+            <div className="text-xl md:text-2xl text-cyan-400 mb-3">NEXT MAJOR UPDATE IN</div>
+            <CountdownTimer targetDate={targetDate} />
           </div>
+
+          {/* Logo */}
+          <div className="flex justify-center mb-6">
+            <div className="relative w-24 h-24 md:w-32 md:h-32">
+              <Image
+                src="/images/webinject-logo.png"
+                alt="WebInject Logo"
+                fill
+                style={{ objectFit: "contain" }}
+                priority
+              />
+            </div>
+          </div>
+
           <h1 className="text-4xl md:text-6xl font-bold mb-6 glitch-text" data-text="Game Modding Reimagined">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-blue-500 to-purple-600">
               Game Modding Reimagined

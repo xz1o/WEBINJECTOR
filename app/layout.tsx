@@ -30,7 +30,7 @@ const SHOW_SHUTDOWN_SCREEN = false
 
 // Maintenance configuration
 const MAINTENANCE_START_DATE = new Date() // Current date/time
-const MAINTENANCE_DURATION = MAINTENANCE_TIME.DAYS(2) // 2 days maintenance
+const MAINTENANCE_DURATION = MAINTENANCE_TIME.DAYS(3) // 3 days maintenance
 
 // Update the RootLayout function to include the ShutdownOverlay
 export default function RootLayout({

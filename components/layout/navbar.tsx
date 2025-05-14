@@ -6,7 +6,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
-import { Menu, X, Download, ChevronDown, DollarSign, Shield } from "lucide-react"
+import { Menu, X, Download, ChevronDown, DollarSign, Shield, Zap } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { SVGIconLibrary } from "@/components/ui/svg-icon-library"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
@@ -34,6 +34,12 @@ export function NavBar() {
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
     { name: "Marketplace", href: "/marketplace" },
+    {
+      name: "Early Access",
+      href: "/early-access",
+      icon: <Zap className="h-4 w-4 text-yellow-400" />,
+      highlight: true,
+    },
     { name: "Money Made", href: "/money-made", icon: <DollarSign className="h-4 w-4 text-green-400" /> },
     { name: "ADMIN FUN", icon: <Shield className="h-4 w-4 text-red-400" />, action: () => setAdminFunModalOpen(true) },
   ]
@@ -88,10 +94,16 @@ export function NavBar() {
                       href={link.href}
                       className={`text-sm transition-colors hover:text-cyan-400 flex items-center gap-1 ${
                         pathname === link.href ? "text-cyan-400" : "text-white"
-                      }`}
+                      } ${link.highlight ? "relative after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-0.5 after:bg-yellow-400 after:rounded-full" : ""}`}
                     >
                       {link.icon && link.icon}
                       {link.name}
+                      {link.highlight && (
+                        <span className="absolute -top-1 -right-2 flex h-2 w-2">
+                          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
+                          <span className="relative inline-flex rounded-full h-2 w-2 bg-yellow-500"></span>
+                        </span>
+                      )}
                     </Link>
                   ) : (
                     <button
@@ -179,11 +191,17 @@ export function NavBar() {
                       href={link.href}
                       className={`py-2 px-4 hover:bg-purple-900/20 rounded-md flex items-center gap-2 ${
                         pathname === link.href ? "text-cyan-400" : "text-white"
-                      }`}
+                      } ${link.highlight ? "border-l-2 border-yellow-400" : ""}`}
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {link.icon && link.icon}
                       {link.name}
+                      {link.highlight && (
+                        <span className="flex h-2 w-2 ml-1">
+                          <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-yellow-400 opacity-75"></span>
+                          <span className="relative inline-flex rounded-full h-2 w-2 bg-yellow-500"></span>
+                        </span>
+                      )}
                     </Link>
                   ) : (
                     <button
