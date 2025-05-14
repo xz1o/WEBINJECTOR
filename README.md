@@ -1,30 +1,66 @@
-# Webinject 2.0 website
+# WebInject 2.0 - Game Modding Reimagined
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+Welcome to **WebInject 2.0**, the first **web-based injector** built to empower gamers and modders alike. Discover, explore, and inject powerful modifications into your favorite titles — all from your browser.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/alex-s-projects-9df2cde8/v0-webinject-2-0-website)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/8A5FWmoKh0l)
+> 🚀 **Game Modding Reimagined**  
+> No downloads. No installations. Just pure in-browser game enhancement.
 
-## Overview
+---
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## 🔥 Features
 
-## Deployment
+- 🌐 **Web-Based Injector**  
+  Inject mods into HTML5 and web-embedded games directly from your browser.
 
-Your project is live at:
+- 🎮 **Powerful Game Modding**  
+  Compatible with a growing list of popular games – customize gameplay like never before.
 
-**[https://vercel.com/alex-s-projects-9df2cde8/v0-webinject-2-0-website](https://vercel.com/alex-s-projects-9df2cde8/v0-webinject-2-0-website)**
+- 🧩 **Mod Loader & Manager**  
+  Easily enable, disable, and configure mods through an intuitive interface.
 
-## Build your app
+- 💡 **Live Mod Explorer**  
+  Browse and preview community-created mods instantly.
 
-Continue building your app on:
+- ⚙️ **Advanced Controls**  
+  Toggle overlays, resize the UI, use keyboard shortcuts, and apply themes – all customizable.
 
-**[https://v0.dev/chat/projects/8A5FWmoKh0l](https://v0.dev/chat/projects/8A5FWmoKh0l)**
+- 🔐 **Secure User Auth**  
+  Email/password login with email verification. Admin-only access panel included.
 
-## How It Works
+- 📜 **Built-in Logger**  
+  Track injections and mod behavior in real-time with our built-in console.
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+---
+
+## 🌈 Coming Soon
+
+- Game save syncing with cloud storage  
+- Community mod sharing platform  
+- Developer tools for creating mods
+
+---
+
+## 🚧 Disclaimer
+
+WebInject 2.0 is intended for educational and non-commercial purposes. Use responsibly. Some games may restrict modding or injecting behavior – please respect the terms of service of the games you modify.
+
+---
+
+## 🛠️ Developers
+
+Want to contribute? Fork the repo and submit a pull request. Contributions, issues, and suggestions are always welcome!
+
+---
+
+## 📎 License
+
+MIT License. See `LICENSE` for details.
+
+---
+
+## 🌐 Visit the Live Site
+
+👉 [Launch WebInject 2.0](https://webinjector.vercel.app/))  
+Experience game modding directly in your browser.
+
+---
