@@ -32,7 +32,7 @@ export function MarketplaceFilters({ filters, onChange }: MarketplaceFiltersProp
               <SelectTrigger className="bg-black/60 border-purple-500/30">
                 <SelectValue placeholder="All Games" />
               </SelectTrigger>
-              <SelectContent className="bg-black/90 border border-purple-500/30 backdrop-blur-md">
+              <SelectContent className="bg-black/90 border border-purple-500/30 backdrop-blur-md max-h-[300px] overflow-y-auto custom-scrollbar">
                 <SelectItem value="all">All Games</SelectItem>
                 <SelectItem value="minecraft">Minecraft</SelectItem>
                 <SelectItem value="roblox">Roblox</SelectItem>
@@ -40,6 +40,24 @@ export function MarketplaceFilters({ filters, onChange }: MarketplaceFiltersProp
                 <SelectItem value="gtav">GTA V</SelectItem>
                 <SelectItem value="valorant">Valorant</SelectItem>
                 <SelectItem value="cs2">CS2</SelectItem>
+                <SelectItem value="cod">Call of Duty: Modern Warfare II</SelectItem>
+                <SelectItem value="apex">Apex Legends</SelectItem>
+                <SelectItem value="overwatch">Overwatch 2</SelectItem>
+                <SelectItem value="rainbow">Rainbow Six Siege</SelectItem>
+                <SelectItem value="battlefield">Battlefield 2042</SelectItem>
+                <SelectItem value="tarkov">Escape from Tarkov</SelectItem>
+                <SelectItem value="pubg">PUBG: Battlegrounds</SelectItem>
+                <SelectItem value="halo">Halo Infinite</SelectItem>
+                <SelectItem value="halflife">Half-Life 2</SelectItem>
+                <SelectItem value="doom">DOOM Eternal</SelectItem>
+                <SelectItem value="tf2">Team Fortress 2</SelectItem>
+                <SelectItem value="quake">Quake Champions</SelectItem>
+                <SelectItem value="l4d2">Left 4 Dead 2</SelectItem>
+                <SelectItem value="farcry">Far Cry 3</SelectItem>
+                <SelectItem value="borderlands">Borderlands 2</SelectItem>
+                <SelectItem value="metro">Metro Exodus</SelectItem>
+                <SelectItem value="callofjuarez">Call of Juarez: Gunslinger</SelectItem>
+                <SelectItem value="titanfall">Titanfall 2</SelectItem>
               </SelectContent>
             </Select>
           </div>

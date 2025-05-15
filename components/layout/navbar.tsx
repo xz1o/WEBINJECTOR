@@ -51,6 +51,24 @@ export function NavBar() {
     { name: "GTA V", href: "/games/gtav", icon: "gtav" },
     { name: "Valorant", href: "/games/valorant", icon: "valorant" },
     { name: "CS2", href: "/games/cs2", icon: "cs2" },
+    { name: "Call of Duty: MW2", href: "/games/cod", icon: "cod" },
+    { name: "Apex Legends", href: "/games/apex", icon: "apex" },
+    { name: "Overwatch 2", href: "/games/overwatch", icon: "overwatch" },
+    { name: "Rainbow Six Siege", href: "/games/rainbow", icon: "rainbow" },
+    { name: "Battlefield 2042", href: "/games/battlefield", icon: "battlefield" },
+    { name: "Escape from Tarkov", href: "/games/tarkov", icon: "tarkov" },
+    { name: "PUBG: Battlegrounds", href: "/games/pubg", icon: "pubg" },
+    { name: "Halo Infinite", href: "/games/halo", icon: "halo" },
+    { name: "Half-Life 2", href: "/games/halflife", icon: "halflife" },
+    { name: "DOOM Eternal", href: "/games/doom", icon: "doom" },
+    { name: "Team Fortress 2", href: "/games/tf2", icon: "tf2" },
+    { name: "Quake Champions", href: "/games/quake", icon: "quake" },
+    { name: "Left 4 Dead 2", href: "/games/l4d2", icon: "l4d2" },
+    { name: "Far Cry 3", href: "/games/farcry", icon: "farcry" },
+    { name: "Borderlands 2", href: "/games/borderlands", icon: "borderlands" },
+    { name: "Metro Exodus", href: "/games/metro", icon: "metro" },
+    { name: "Call of Juarez: Gunslinger", href: "/games/callofjuarez", icon: "callofjuarez" },
+    { name: "Titanfall 2", href: "/games/titanfall", icon: "titanfall" },
   ]
 
   const handleDesktopAppClick = (e: React.MouseEvent) => {
@@ -123,7 +141,7 @@ export function NavBar() {
                       Games <ChevronDown className="ml-1 h-4 w-4" />
                     </button>
                   </DropdownMenuTrigger>
-                  <DropdownMenuContent className="bg-black/90 border border-purple-500/30 backdrop-blur-md">
+                  <DropdownMenuContent className="bg-black/90 border border-purple-500/30 backdrop-blur-md max-h-[70vh] overflow-y-auto custom-scrollbar">
                     {gameLinks.map((game) => (
                       <DropdownMenuItem key={game.name} asChild>
                         <Link
@@ -219,7 +237,7 @@ export function NavBar() {
                 )}
 
                 <div className="py-2 px-4 font-medium">Games</div>
-                <div className="pl-4 flex flex-col space-y-2">
+                <div className="pl-4 flex flex-col space-y-2 max-h-[40vh] overflow-y-auto custom-scrollbar">
                   {gameLinks.map((game) => (
                     <Link
                       key={game.name}

@@ -358,6 +358,131 @@ export function ModMarketplace({ filters, searchQuery }: ModMarketplaceProps) {
       accentColor: "purple",
       status: "approved",
     },
+    {
+      id: "13",
+      name: "Warfare Aimbot",
+      game: "cod",
+      gameDisplayName: "Modern Warfare II",
+      category: "combat",
+      description: "Premium aimbot for Modern Warfare II with customizable settings",
+      version: "v2.5",
+      creator: "WarMaster",
+      creatorId: "user852",
+      price: 19.99,
+      priceType: "paid",
+      downloads: 7532,
+      rating: 4.7,
+      uploadDate: "2024-03-12",
+      features: [
+        "Precision targeting",
+        "Multiple aiming modes",
+        "Visibility checks",
+        "Anti-recoil feature",
+        "Custom hotkeys",
+      ],
+      accentColor: "gray",
+      status: "approved",
+    },
+    {
+      id: "14",
+      name: "Apex Legends ESP",
+      game: "apex",
+      gameDisplayName: "Apex Legends",
+      category: "visual",
+      description: "See players, items, and more through walls",
+      version: "v3.1",
+      creator: "ApexHunter",
+      creatorId: "user369",
+      price: 14.99,
+      priceType: "paid",
+      downloads: 9214,
+      rating: 4.8,
+      uploadDate: "2024-02-28",
+      features: [
+        "Player ESP with health bars",
+        "Item ESP with rarity colors",
+        "Distance indicators",
+        "Squad information",
+        "Customizable colors",
+      ],
+      accentColor: "red",
+      status: "approved",
+    },
+    {
+      id: "15",
+      name: "Overwatch 2 Ultimates",
+      game: "overwatch",
+      gameDisplayName: "Overwatch 2",
+      category: "utility",
+      description: "Ultimate ability tracker for all heroes",
+      version: "v1.7",
+      creator: "OWPro",
+      creatorId: "user741",
+      price: 0,
+      priceType: "free",
+      downloads: 15427,
+      rating: 4.5,
+      uploadDate: "2024-03-05",
+      features: [
+        "Track enemy ultimate status",
+        "Audio alerts when ultimates ready",
+        "Customizable UI",
+        "Works with all heroes",
+        "Regular updates",
+      ],
+      accentColor: "blue",
+      status: "approved",
+    },
+    {
+      id: "16",
+      name: "Tarkov Loot ESP",
+      game: "tarkov",
+      gameDisplayName: "Escape from Tarkov",
+      category: "visual",
+      description: "Find valuable loot instantly with this ESP",
+      version: "v2.2",
+      creator: "TarkovSurvivalist",
+      creatorId: "user583",
+      price: 24.99,
+      priceType: "paid",
+      downloads: 6321,
+      rating: 4.9,
+      uploadDate: "2024-03-18",
+      features: [
+        "Valuable item highlighting",
+        "Container contents ESP",
+        "Extraction point markers",
+        "Player gear information",
+        "Distance indicators",
+      ],
+      accentColor: "stone",
+      status: "approved",
+    },
+    {
+      id: "17",
+      name: "Siege Wall Vision",
+      game: "rainbow",
+      gameDisplayName: "Rainbow Six Siege",
+      category: "visual",
+      description: "See enemies through walls with this undetected wallhack",
+      version: "v1.9",
+      creator: "SiegeMaster",
+      creatorId: "user256",
+      price: 19.99,
+      priceType: "paid",
+      downloads: 8742,
+      rating: 4.7,
+      uploadDate: "2024-02-22",
+      features: [
+        "Full operator ESP",
+        "Health and operator information",
+        "Gadget detection",
+        "Custom colors and settings",
+        "Regular updates",
+      ],
+      accentColor: "amber",
+      status: "approved",
+    },
   ]
 
   // Sample pending mods data
@@ -663,6 +788,12 @@ export function ModMarketplace({ filters, searchQuery }: ModMarketplaceProps) {
         return "border-pink-500/30 hover:border-pink-500/60"
       case "orange":
         return "border-orange-500/30 hover:border-orange-500/60"
+      case "gray":
+        return "border-gray-500/30 hover:border-gray-500/60"
+      case "stone":
+        return "border-stone-500/30 hover:border-stone-500/60"
+      case "amber":
+        return "border-amber-500/30 hover:border-amber-500/60"
       default:
         return "border-cyan-500/30 hover:border-cyan-500/60"
     }
@@ -682,6 +813,12 @@ export function ModMarketplace({ filters, searchQuery }: ModMarketplaceProps) {
         return "bg-pink-600 hover:bg-pink-700"
       case "orange":
         return "bg-orange-600 hover:bg-orange-700"
+      case "gray":
+        return "bg-gray-600 hover:bg-gray-700"
+      case "stone":
+        return "bg-stone-600 hover:bg-stone-700"
+      case "amber":
+        return "bg-amber-600 hover:bg-amber-700"
       default:
         return "bg-cyan-600 hover:bg-cyan-700"
     }
@@ -701,6 +838,12 @@ export function ModMarketplace({ filters, searchQuery }: ModMarketplaceProps) {
         return "border-pink-500/50 text-pink-400 hover:bg-pink-950/20"
       case "orange":
         return "border-orange-500/50 text-orange-400 hover:bg-orange-950/20"
+      case "gray":
+        return "border-gray-500/50 text-gray-400 hover:bg-gray-950/20"
+      case "stone":
+        return "border-stone-500/50 text-stone-400 hover:bg-stone-950/20"
+      case "amber":
+        return "border-amber-500/50 text-amber-400 hover:bg-amber-950/20"
       default:
         return "border-cyan-500/50 text-cyan-400 hover:bg-cyan-950/20"
     }
